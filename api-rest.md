@@ -1,0 +1,19 @@
+# Diseño de Endpoints REST - Pokémon API
+
+## Endpoints Principales
+
+### 1. Obtener lista de Pokémon
+- **URL:** `https://pokeapi.co/api/v2/pokemon/`
+- **Método:** GET
+- **Parámetros:** `limit` (máx. 100000), `offset`
+- **Ejemplo de respuesta:**
+```json
+{
+  "count": 1302,
+  "next": "https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20",
+  "previous": null,
+  "results": [
+    { "name": "bulbasaur", "url": "https://pokeapi.co/api/v2/pokemon/1/" },
+    { "name": "ivysaur", "url": "https://pokeapi.co/api/v2/pokemon/2/" }
+  ]
+}
